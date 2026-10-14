@@ -1,0 +1,256 @@
+/* Fontes */
+@import
+  url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tamanho de fonte padrão de 10px para cauculos rem mais fáceis: 1rem = 10px, 1.5rem = 15px etc.*/
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 1.9rem;
+  margin-top: 10rem;
+}
+
+header {
+  width: 100%; /* Largura da página */
+  top: 0; /* Remove espaço do topo */
+  padding: 2rem 5rem;
+  background-color: white;
+  position: fixed; /* Navbar sempre visível */
+  display: flex;
+  flex-direction: row; /* Alinha os elementos em fila */
+  align-items: center; /* Alinhamento horizontal */
+  justify-content: space-between; /* Empurra os itens para o canto */
+}
+
+@media (max-width: 950px) {
+  header {
+    flex-direction: column; /* Alinha os elementos em coluna */
+    justify-content: center;
+  }
+}
+
+#header-img {
+  display: flex;
+  width: 30rem;
+}
+
+@media (max-width: 350px) {
+  #header-img {
+    align-items: center;
+    width: 20rem;
+  }
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row; /* Alinha os elementos em fila */
+  justify-content: flex-end;
+}
+
+@media (max-width: 950px) {
+  #nav-bar {
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items: center;
+  }
+}
+
+.nav-link {
+  margin-right: 10rem;
+  font-weight: bold;
+}
+
+@media (max-width: 950px) {
+  .nav-link {
+    margin: 0;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.title {
+  display: flex;
+  flex-direction: column; /* Alinha os elementos em coluna */
+  align-items: center;
+  text-align: center;
+}
+
+.title h2 {
+  margin: 2rem 2rem 1rem 2rem;
+}
+
+@media (max-width: 950px) {
+  .title h2 {
+    margin-top: 5rem;
+  }
+}
+
+#form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  width: 90%;
+}
+
+input[type='email'] {
+  border: 1px solid rgba(0,0,0,.50);
+  border-radius: 0.3rem;
+  height: 3rem;
+  margin: 1rem;
+  max-width: 30rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+input[type='submit'] {
+  background-color: gray;
+  border: 0;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  font-weight: bold;
+  height: 3rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  width: 15rem;
+}
+
+#features {
+  margin: 5rem auto;
+  max-width: 90rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column; /* Alinha os elementos em coluna */
+}
+
+.features-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  width: 20rem;
+}
+
+@media (max-width: 550px) {
+  .icons {
+    display: none;
+  }
+}
+
+.description-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 15rem;
+  width: 80rem;
+  padding: 5px;
+  margin: 2rem;
+}
+
+.description-text h2 {
+  margin: 2rem 0;
+}
+
+@media (max-width: 550px) {
+  .description-text h2 {
+    text-align: center;
+  }
+}
+
+.video {
+  margin: 5rem 2rem;
+  text-align: center;
+}
+
+iframe {
+  height: 315px;
+  max-width: 560px;
+  width: 100%;
+}
+
+#products {
+  margin: 2rem auto;
+  max-width: 100rem;
+  display: flex;
+  flex-direction: row; /* Alinha os elementos em fila */
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  #products {
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items: center;
+  }
+}
+
+.box {
+  border: 1px solid;
+  height: 30rem;
+  margin: 1rem;
+  width: 30rem;
+  text-align: center;
+}
+
+.product {
+  background-color: gray;
+  font-weight: bold;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+button {
+  background-color: gray;
+  border: 0;
+  border-radius: 0.1rem;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+footer {
+  margin: auto;
+  max-width: 100rem;
+  background-color: gray;
+  padding: 2rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row; /* Alinha os elementos em fila */
+  justify-content: flex-end;
+}
+
+footer ul li {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+footer span {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
