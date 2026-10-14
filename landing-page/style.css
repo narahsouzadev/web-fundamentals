@@ -1,0 +1,182 @@
+/* IMPORTA AS FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido');
+
+/* RESETA O CSS */
+* {
+  margin: 0;
+  padding: 0;
+  caixa-sizing: border-caixa;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth; /*ROLAGEM SUAVE*/
+}
+
+body {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 1.9rem;
+  line-height: 3rem;
+}
+
+/* MENU SUPERIOR */
+#navbar {
+  align-items: center; /* Alinhamento horizontal */
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 6rem;
+  justify-content: flex-end;
+  position: fixed; /* NAVBAR SEMPRE VISIVEL */
+  width: 100%;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  font-size: 3rem;
+  list-style: none;
+  margin-right: 3rem;
+}
+
+/* LINKS */
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+/* SEÇOES*/
+#inicio {
+  background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('img/doces.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+}
+
+#inicio,
+#descricao,
+#contato {
+  align-items: center;
+  background-color: #292A2C;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 100% DA ALTURA DA JANELA DE VISUALIZAÇÃO */
+  justify-content: center;
+  width: 100%;
+}
+
+#produtos,
+#pessoas,
+#contato {
+  padding: 5rem 0;
+}
+
+/* TÍTULOS E PARAGRAFOS*/
+h1 {
+  font-size: 8rem;
+  padding: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 6rem;
+  padding: 5rem;
+  text-align: center;
+}
+
+#inicio p {
+  font-size: 3rem;
+  margin: 1.5rem;
+}
+
+.produto-titulo p,
+.pessoa-titulo p {
+  font-size: 3rem;
+}
+
+.texto p {
+  color: white;
+  font-size: 2.5rem;
+  margin: 2.5rem 5rem;
+  text-align: center;
+}
+
+/* IMAGENS E LEGENDAS */
+
+.produto-links,
+.pessoa-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.produto-titulo,
+.pessoa-titulo {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produto-img,
+.pessoa-img {
+  border: 5px solid gray;
+  width: 35rem;
+}
+
+/*FORMULARIO*/
+#contato {
+  background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('img/doces.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+}
+
+#formulario-contato {
+  background-color: #DDDDDD;
+  color: black;
+  margin: auto;
+  max-width: 55rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.grupo {
+  margin: 2rem;
+}
+
+.caixa {
+  border: 1px solid rgba(0,0,0,.50);
+  border-radius: 0.3rem;
+  display: block;
+  padding: 0.2rem 0.6rem;
+  width: 100%;
+}
+
+input,
+textarea,
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* RODAPÉ */
+footer {
+  align-items: center; /* Alinhamento horizontal */
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  justify-content: center;
+}
