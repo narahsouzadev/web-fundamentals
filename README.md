@@ -5,7 +5,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
-This repository contains a collection of web development projects created purely for practice and continuous learning. These exercises helped me consolidate fundamental concepts in building responsive, accessible, and structured web pages.
+This repository contains a collection of web development projects and code challenges aimed at learning, practice, and the consolidation of fundamental concepts in building responsive, accessible, and structured web pages using HTML5, CSS3, and JavaScript.
 
 ## Technologies Used
 - **HTML5**: Semantic structure, accessibility, and modern web forms.
